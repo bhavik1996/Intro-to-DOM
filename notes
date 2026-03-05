@@ -1,0 +1,28 @@
+BMI calculator - Components
+ Male or Female - Radio Button
+ Height - Input Field
+ Weight - Input Field
+ BMI - Result
+ conditional text - conditionals
+
+ ---
+
+How do I calculate BMI?
+ To compute BMI, you need to:
+  Divide your weight (in kilograms) by your height (in meters).
+  Divide the answer by your height again to get your BMI.
+   [weight(kg)/height(m)]/height
+  That is the body mass index formula. Expressed differently, it is:
+   BMI = weight / height²
+
+There are five basic ranges within the BMI scale:
+ Underweight = less than 18.5;
+ Normal weight = 18.5-24.9;
+ Overweight = 25-29.9;
+ Obesity = 30-35;
+ Severe obesity = 35 and over.
+
+Coversions
+1ft = 30.48 cm
+1m  = 3.28084 ft
+100cm = 1 m

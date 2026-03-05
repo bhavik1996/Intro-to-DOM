@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Intro to DOM - BMI Calculator</title>
+  </head>
+  <body>
+    <main class="w-100 mx-auto mt-10">
+      <h1 class="text-2xl font-semibold mb-2">BMI Calculator - Body Mass Index</h1>
+      <p class="text-sm text-neutral-600 mb-5">The Body Mass Index (BMI) Calculator can be used to calculate BMI value and corresponding weight status while taking age into consideration</p>
+      <div class="">
+        <div class="flex gap-5 mb-2">
+          <div class="flex gap-1 items-center">
+            <input type="radio" name="gender" id="male" />
+            <label for="">Male</label>
+          </div>
+          <div class="flex gap-1 items-center">
+            <input type="radio" name="gender" id="female" />
+            <label for="">Female</label>
+          </div>
+        </div>
+        <div class="flex gap-3 items-center">
+          <input type="text" id="height" name="" placeholder="Insert Height in cm" class="w-1/2 border p-2 rounded-xl border-neutral-300 mb-2 focus:ring-3 focus:ring-violet-300 focus:outline-none" />
+          <input type="text" id="weight" name="" placeholder="Insert Weight in kg" class="w-1/2 border p-2 rounded-xl border-neutral-300 mb-2 focus:ring-3 focus:ring-violet-300 focus:outline-none" />
+        </div>
+        <p id="result" class="p-2 mb-2 text-neutral-500">BMI Result</p>
+        <p id="report" class="px-2"></p>
+        <button
+          id="submit"
+          onclick="hide()"
+          class="w-full bg-black font-medium text-white p-2 rounded-xl border hover:bg-transparent hover:text-black hover:border-2 hover:border-black transition-all duration-250"
+        >
+          Submit
+        </button>
+      </div>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
