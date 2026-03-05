@@ -17,9 +17,10 @@
         <button onclick="seoTitle()" class="w-full px-3 py-2 bg-blue-500 text-white rounded-xl mb-2" id="btnTitle">Check Meta Title Count</button>
         <p id="titleResult" class="font-medium text-blue-500 mb-5"></p>
 
-        <input type="text" name="" id="desc" placeholder="Enter Meta Description" class="w-full border rounded-xl placeholder-text-neutral-500 p-2 mb-2" />
-        <button onclick="seoDesc()" class="w-full px-3 py-2 bg-blue-500 text-white rounded-xl mb-3" id="btnDesc">Check Meta Description Count</button>
+        <input type="text" onkeyup="countLetters()" id="desc" placeholder="Enter Meta Description" class="w-full border rounded-xl placeholder-text-neutral-500 p-2 mb-2" />
+        <!-- <button onclick="seoDesc()" class="w-full px-3 py-2 bg-blue-500 text-white rounded-xl mb-3" id="btnDesc">Check Meta Description Count</button> -->
         <p id="descResult" class="font-medium text-blue-500"></p>
+        <p id="descRange" class="font-medium"></p>
         <!-- <p></p> -->
       </div>
     </main>
