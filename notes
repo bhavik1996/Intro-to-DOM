@@ -26,3 +26,55 @@ Coversions
 1ft = 30.48 cm
 1m  = 3.28084 ft
 100cm = 1 m
+
+
+
+let title = document.getElementById("title");
+let description = document.getElementById("description");
+
+title.addEventListener("input", checkTitle);
+description.addEventListener("input", checkDescription);
+
+function checkTitle() {
+
+  let text = title.value;
+  let status = document.getElementById("titleStatus");
+  let preview = document.getElementById("previewTitle");
+
+  preview.innerText = text;
+
+  if (text.length < 50) {
+    status.innerText = "Title too short";
+    status.style.color = "red";
+  }
+  else if (text.length <= 60) {
+    status.innerText = "Optimal title length";
+    status.style.color = "green";
+  }
+  else {
+    status.innerText = "Title too long";
+    status.style.color = "orange";
+  }
+}
+
+function checkDescription() {
+
+  let text = description.value;
+  let status = document.getElementById("descStatus");
+  let preview = document.getElementById("previewDesc");
+
+  preview.innerText = text;
+
+  if (text.length < 120) {
+    status.innerText = "Description too short";
+    status.style.color = "red";
+  }
+  else if (text.length <= 160) {
+    status.innerText = "Optimal description";
+    status.style.color = "green";
+  }
+  else {
+    status.innerText = "Description too long";
+    status.style.color = "orange";
+  }
+}

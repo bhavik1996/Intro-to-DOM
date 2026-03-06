@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Practice - Live SEO Title + Meta Description Checker</title>
+  </head>
+  <body>
+    <div class="w-[600px] mx-auto mt-10">
+      <h2 class="text-xl font-semibold mb-2">SEO Meta Checker</h2>
+      <input type="text" id="seoTitle" placeholder="Enter Meta Title" class="border rounded p-2 w-full mb-2" />
+      <p id="titleStatus" class="text-sm mb-2"></p>
+
+      <textarea id="seoDescription" placeholder="Enter Meta Description" class="border rounded p-2 w-full mb-2 text-break"></textarea>
+      <p id="descStatus" class="text-sm mb-2"></p>
+      <hr class="my-4" />
+      <h3 class="font-semibold mb-2">Google Preview</h3>
+      <p id="previewTitle" class="text-lg text-blue-700"></p>
+      <p class="text-green-700 text-sm">www.yoursite.com</p>
+      <p id="previewDesc" class="text-sm text-gray-700"></p>
+    </div>
+    <script src="/applive.js"></script>
+  </body>
+</html>
